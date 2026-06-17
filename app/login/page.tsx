@@ -12,6 +12,7 @@ import {
   WAREHOUSE_DEMO_CREDENTIALS,
 } from "@/lib/mock-data"
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/theme-toggle"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import {
@@ -77,6 +78,9 @@ export default function LoginPage() {
 
   return (
     <main className="flex min-h-screen flex-col lg:flex-row">
+      <div className="absolute right-4 top-4 z-10">
+        <ThemeToggle className="bg-background/80 backdrop-blur" />
+      </div>
       {/* Brand panel */}
       <section className="relative hidden flex-1 flex-col justify-between bg-sidebar p-12 text-sidebar-foreground lg:flex">
         <div className="flex items-center gap-2">

@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils"
 import { usePlatform } from "@/lib/platform-context"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 const NAV = [
   { href: "/rider", label: "Pickup queue", icon: PackageCheck },
@@ -74,6 +75,7 @@ export function RiderSidebar() {
             </p>
           </div>
         </div>
+        <ThemeToggle className="mt-1 w-full justify-start text-sidebar-foreground/70 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground" />
         <Button
           variant="ghost"
           size="sm"
